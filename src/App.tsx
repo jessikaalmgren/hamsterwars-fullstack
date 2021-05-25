@@ -5,7 +5,7 @@ import Header from './header/Header'
 function App() {
   return (
     <div className="App">
-      <header className="header">
+      <header className="App-header">
        <Header/> 
       </header>
 	  <section className="content">

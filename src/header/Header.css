@@ -1,0 +1,33 @@
+.App-header {
+  position: relative;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.App-header img {
+  height: 20em;
+  width: 100%;
+  object-fit: cover;
+  opacity: 30%;
+}
+
+.App-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  margin: 0 auto;
+}
+
+.App-header p {
+  display: inline-block;
+  margin: 2.2em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.App-header .navlinks {
+  position: relative;
+  bottom: 30%;
+}
