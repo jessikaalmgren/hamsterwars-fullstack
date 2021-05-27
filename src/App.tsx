@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './header/Header'
+import Landing from './landing/Landing'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
        <Header/> 
       </header>
 	  <section className="content">
-	  <h3>Content</h3>
+	  <Landing />
 	  </section>
 	  <section className="footer">
 		  <h1>Footer</h1>
