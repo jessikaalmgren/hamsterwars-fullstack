@@ -1,0 +1,13 @@
+.wrapper-gallery h2 {
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 1em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-gap: 1em;
+  background-color: white;
+}

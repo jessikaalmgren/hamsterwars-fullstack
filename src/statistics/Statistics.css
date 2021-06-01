@@ -1,0 +1,21 @@
+.wrapper-grid h2 {
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 1em;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.winning {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.losing {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}

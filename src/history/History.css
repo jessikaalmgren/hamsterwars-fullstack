@@ -1,0 +1,27 @@
+.wrapper-history h2 {
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 1em;
+}
+
+.wrapper-history {
+  padding-bottom: 5em;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  text-align: center;
+}
+
+.container {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: white;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-gap: 2em;
+}

@@ -1,13 +1,18 @@
-.wrapper {
-  background-color: #e4bfc9;
+.wrapper-landing {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 5em;
 }
 
-.content {
-  grid-column: 2/4;
-  grid-row: 2/3;
-  background-color: #e4bfc9;
+.wrapper-landing h1 {
+  font-size: 1.8em;
 }
 
-.Landing-content h1 {
-  color: black;
+.wrapper-landing p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.content2 {
+  padding-top: 2em;
 }
