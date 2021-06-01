@@ -4,7 +4,7 @@ let serviceAccount;
 if(process.env.PRIVATE_KEY){
 	serviceAccount = JSON.parse(process.env.PRIVATE_KEY)
 } else{
-	serviceAccount = require("./firebase-private-key.json");
+	serviceAccount = require("../firebase-private-key.json");
 }
 
 
