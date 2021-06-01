@@ -15,18 +15,36 @@
 }
 
 .form {
-  height: 30em;
-  width: 20em;
+  height: 39em;
+  width: 17em;
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
 }
 
+.form .error {
+  border-color: #ef3108;
+}
+
+.form .valid {
+  border-color: #51eb1f;
+}
+
 input {
   margin-top: 0.5em;
   width: 20em;
-  height: 2em;
+  height: 2.4em;
   padding-left: 0.4em;
+  border-radius: 0.3em;
+  outline: none;
+  margin-bottom: 0.3em;
+}
+
+.message {
+  position: absolute;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #ef3108;
 }
 
 .form button {
