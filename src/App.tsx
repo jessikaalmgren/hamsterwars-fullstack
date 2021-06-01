@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from './header/Header'
-import Landing from './landing/Landing'
-import Compete from './compete/Compete'
-import Gallery from './gallery/Gallery'
-import Statistics from './statistics/Statistics'
-import History from './history/History'
-import Footer from './footer/Footer'
+import Header from './components/header/Header'
+import Landing from './components/landing/Landing'
+import Compete from './components/compete/Compete'
+import Gallery from './components/gallery/Gallery'
+import Statistics from './components/statistics/Statistics'
+import History from './components/history/History'
+import Footer from './components/footer/Footer'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
 function App() {

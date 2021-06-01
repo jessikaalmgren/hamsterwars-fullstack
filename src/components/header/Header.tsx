@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import background from '../assets/flowers.jpeg'
+import background from '../../assets/flowers.jpeg'
 
 function Header() {
 	return (
