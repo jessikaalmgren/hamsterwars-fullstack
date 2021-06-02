@@ -11,7 +11,7 @@ const matchWinners = require('./routes/matchWinners.js')
 
 const PORT = process.env.PORT || 1440
 const staticFolder = path.join(__dirname, '../build')
-const staticFolder2 = path.join(__dirname, 'assets')
+const staticFolder2 = path.join(__dirname, './img')
 
 
 //Middleware

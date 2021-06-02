@@ -1,31 +1,44 @@
 import React from 'react'
+import { useEffect, useState } from 'react'
 import './Gallery.css'
 import Form from './Form'
+import {Hamster} from '../../types/hamster'
+
+const Gallery = () => {
+	const [hamsters, setHamsters] = useState<null | Hamster[]>(null)
+	
+
+	useEffect(() => {
+		async function getHamsters() {
+			const response = await fetch('/hamsters', {method: 'GET'})
+			const data: Hamster[] = await response.json()
+			setHamsters(data)   
+		}
+		getHamsters()
+	}, [])
+	
 
 
-function Gallery() {
 	return (
+
 	  <div className="wrapper-gallery">
 		  <h2>Våra hamstrar</h2>
+
 		<section className="gallery">
-			<div className="grid1">
-			hamster1
+		{hamsters ? hamsters.map(hamster => (
+			<div className="grid" key={hamster.id}>
+				  <img src={`${hamster.imgName}`} alt="Bild på hamster"/>
+				<p>{hamster.name}</p>
 			</div>
-			<div className="grid2">
-			hamster2
-			</div>
-			<div className="grid3">
-			hamster3
-			</div>
-			<div className="grid4">
-			hamster4
-			</div>
+		
+		))
+		: 'No reusults yet'}
 		</section>
 		<div className="gallery-form">
 			<Form />
 		</div>
 	  </div>
 	);
-  }
+}
 
   export default Gallery

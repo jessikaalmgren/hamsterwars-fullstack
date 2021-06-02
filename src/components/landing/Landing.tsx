@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Link, } from 'react-router-dom';
 
 function LandingContent() {
 	return (
-		<Router>
 	  <div className="wrapper-landing">
 		<section className="content1">
 			<h1>Vad är Hamsterwars?</h1>
@@ -15,7 +14,8 @@ function LandingContent() {
 		</section>
 		<section className="content2">
 			<h1>Såhär använder du Hamsterwars</h1>
-			<p>För att vara med och tävla och rösta på vilken hamster du tycker är sötast tryck <Link to="/tävla"><b>här</b></Link>, eller tryck 
+			<p>För att vara med och tävla och rösta på vilken hamster du tycker är sötast tryck 
+				<Link to="/tävla"><b>här</b></Link>, eller tryck 
 			på länken <b>TÄVLA</b> i navigationen. <br/> <br/>
 			I <i>galleriet</i> hittar du varje hamster som finns registrerad hos oss. Där kan du även se mer 
 			information om varje hamster om du önskar.<br/> <br/>
@@ -24,7 +24,7 @@ function LandingContent() {
 			där samlas de senast spelade matcherna. </p>
 		</section>
 	  </div>
-	  </Router>
+
 	);
   }
 

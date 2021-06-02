@@ -6,8 +6,34 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr auto;
   grid-gap: 1em;
+}
+
+.grid {
+  justify-content: center;
+  text-align: center;
+  margin: 2em;
+  border-style: solid;
+  padding: 1em;
+  margin: 0 auto;
   background-color: white;
+}
+
+img {
+  width: 27em;
+  height: 21em;
+  overflow: hidden;
+}
+
+.grid p {
+  font-size: 1.2em;
+}
+
+.grid:hover {
+  background-color: #d04a4a;
+  color: white;
+  border: #d04a4a;
+  transition: all 500ms ease-in-out;
 }
