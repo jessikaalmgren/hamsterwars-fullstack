@@ -2,3 +2,10 @@
   text-align: center;
   padding-bottom: 5em;
 }
+
+.box1 {
+  background-color: white;
+  border: solid;
+  padding: 1em;
+  margin-bottom: 2em;
+}

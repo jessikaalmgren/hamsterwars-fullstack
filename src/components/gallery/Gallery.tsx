@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import './Gallery.css'
 import Form from './Form'
 import {Hamster} from '../../types/hamster'
+import HamsterCard from './HamsterCard'
 
 const Gallery = () => {
 	const [hamsters, setHamsters] = useState<null | Hamster[]>(null)
@@ -15,30 +16,32 @@ const Gallery = () => {
 			setHamsters(data)   
 		}
 		getHamsters()
+		console.log('Utskriven')
 	}, [])
-	
-
 
 	return (
-
-	  <div className="wrapper-gallery">
-		  <h2>Våra hamstrar</h2>
-
-		<section className="gallery">
-		{hamsters ? hamsters.map(hamster => (
-			<div className="grid" key={hamster.id}>
-				  <img src={`${hamster.imgName}`} alt="Bild på hamster"/>
-				<p>{hamster.name}</p>
-			</div>
-		
-		))
-		: 'No reusults yet'}
-		</section>
-		<div className="gallery-form">
-			<Form />
+		<div>
+		<div className="wrapper-gallery">
+			<h2>Våra hamstrar</h2>
+			  <p>Här visar vi alla våra hamstrar! <br></br>Du kan ta bort en hamster om du vill, eller lägga till en hamster. <br></br>Önskar du att lägga till en hamster kommer ett formulär längst ner på sidan där du kan lägga till en ny hamster hos oss!</p>
+		  <section className="gallery">
+		  {hamsters ? hamsters.map((hamster) => (
+			  <div key={hamster.id}>
+				  <HamsterCard hamster={hamster} />
+				  
+			  </div>
+		  ))
+		  
+		: 'No hamsters loaded yet'}
+	
+		  </section>
 		</div>
-	  </div>
-	);
-}
 
+		 <div className="formulär">
+		 <Form />
+	 </div>
+	 </div>
+	  );
+	  
+  }
   export default Gallery

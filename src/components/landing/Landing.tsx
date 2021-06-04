@@ -1,7 +1,6 @@
 import React from 'react'
 import './Landing.css'
-//import Compete from '../compete/Compete'
-import { BrowserRouter as Router, Link, } from 'react-router-dom';
+import { BrowserRouter as Router, Link,  } from 'react-router-dom';
 
 function LandingContent() {
 	return (

@@ -25,28 +25,13 @@ const FiveLoosers = () => {
 		<section className="loosers">
 			{losers ? losers.map(loser => (
 				<div className="box1" key={loser.id}>
-					{loser.name}
 					<img src={`${loser.imgName}`} alt="Bild på hamster"/>
-					<p>Antal förlorande matcher: {loser.defeats}</p>
-					<p>Antal spelade matcher: {loser.games}</p>
+					<h3>{loser.name}</h3>
+					<p>Antal förlorande matcher: {loser.defeats} st</p>
+					<p>Antal spelade matcher: {loser.games} st</p>
 				</div>
 			))
 			: 'Hämtar förlorare '}
-			<div className="box1">
-			One hamster
-			</div>
-			<div className="box2">
-			One hamster
-			</div>
-			<div className="box3">
-			One hamster
-			</div>
-			<div className="box4">
-			One hamster
-			</div>
-			<div className="box5">
-			One hamster
-			</div>
 			
 		</section>
 	  </div>

@@ -19,18 +19,18 @@ function App() {
 	   <Link to="/">HAMSTERWARS</Link>
 	   </div>
 	   <nav>
-		   <Link to="/tävla"> TÄVLA</Link> 
-		   <Link to="/galleri"> GALLERI</Link> 
-		   <Link to="/statistik"> STATISTIK</Link> 
-		   <Link to="/historik"> HISTORIK</Link> 
+		   <Link to="/battle"> TÄVLA</Link> 
+		   <Link to="/gallery"> GALLERI</Link> 
+		   <Link to="/statistics"> STATISTIK</Link> 
+		   <Link to="/history"> HISTORIK</Link> 
 	   </nav>
       </header>
 	  <main className="content">
 		  <Switch>
-	  <Route path="/tävla"> <Compete/> </Route>
-	  <Route path="/galleri"> <Gallery/> </Route>
-	  <Route path="/statistik"> <Statistics/> </Route>
-	  <Route path="/historik"> <History/> </Route>
+	  <Route path="/battle"> <Compete/> </Route>
+	  <Route path="/gallery"> <Gallery/> </Route>
+	  <Route path="/statistics"> <Statistics/> </Route>
+	  <Route path="/history"> <History/> </Route>
 	  <Route path="/"> <Landing/> </Route>
 	  </Switch>
 	  </main>

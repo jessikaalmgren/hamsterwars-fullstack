@@ -18,6 +18,12 @@ function Form() {
 
 	const [urlInput, setUrlInput] = useState('')
 	const [urlTouched, setUrlTouched] = useState(false)
+
+	const [hamsterAdded, setHamsterAdded] = useState(false)
+
+	//hamsterAdded
+	let hamsterAddedMessage = 'Hamstern är nu tillagd'
+
 	
 	//Validering för name
 	let nameIsValid:boolean = (nameInput !== '')
@@ -79,6 +85,25 @@ function Form() {
 		urlClass = (urlIsValid ? 'valid' : 'error')
 	}
 	
+	async function postHamster() {
+	const newHamster = {
+		name: nameInput, 
+		age: ageInput, 
+		favFood: foodInput, 
+		loves: hobbyInput,
+		imgName: urlInput, 
+		games: 0,
+		wins: 0, 
+		defeats: 0
+	}
+	const response = await fetch(`/hamsters`, {method: 'POST', headers: {
+		'Content-type': 'application/json'}, body: JSON.stringify(newHamster)})
+		const data = await response.text()
+		console.log('Hamster skickad!' + data)
+		setHamsterAdded(true)
+}
+
+
 
 	return (
 	  <div className="wrapper-form">
@@ -140,7 +165,8 @@ function Form() {
 			{urlTouched ? <div className="message"> {urlErrorMessage}</div> : null}
 			</div><br/><br/><br/>
 
-			<button>LÄGG TILL HAMSTER</button>
+			<button onClick={postHamster}>LÄGG TILL HAMSTER</button>
+			{hamsterAdded ? <div className="addedMessage">{hamsterAddedMessage}</div> : null}
 		</section>
 	  </div>
 	);

@@ -27,9 +27,9 @@ const FiveWinners = () => {
 			{winners ? winners.map(winner => (
 				<div className="box1" key={winner.id}>
 					<img src={`${winner.imgName}`} alt="Bild på hamster"/>
-					{winner.name}
-					<p>Antal vunna matcher: {winner.wins}</p>
-					<p>Antal spelade matcher: {winner.games}</p>
+					<h3>{winner.name}</h3>
+					<p>Antal vunna matcher: {winner.wins} st</p>
+					<p>Antal spelade matcher: {winner.games} st</p>
 				</div>
 			))
 			: 'Hämtar vinnare'}

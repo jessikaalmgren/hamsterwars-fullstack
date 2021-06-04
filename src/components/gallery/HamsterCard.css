@@ -3,14 +3,6 @@
   margin-top: 2em;
 }
 
-.wrapper-gallery .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto;
-  grid-gap: 1em;
-  padding-top: 1em;
-}
-
 .wrapper-gallery p {
   line-height: 1.5em;
   text-align: center;
@@ -40,9 +32,16 @@ img {
   font-size: 1em;
 }
 
-.grid:hover {
-  background-color: #d04a4a;
-  color: white;
-  border: #d04a4a;
-  transition: all 500ms ease-in-out;
+.hamsterinfo {
+  justify-content: center;
+  text-align: center;
+  margin: 2em;
+  border-style: solid;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.matchwinners-link:hover {
+  color: grey;
 }
